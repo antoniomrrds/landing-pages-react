@@ -1,8 +1,10 @@
+import * as Styled from './styles';
+
 function Home() {
   return (
-    <div>
+    <Styled.Wrapper>
       <h1>hello</h1>
-    </div>
+    </Styled.Wrapper>
   );
 }
 
