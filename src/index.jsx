@@ -9,7 +9,6 @@ import { theme } from './styles/theme';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
-
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
