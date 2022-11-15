@@ -23,11 +23,11 @@ describe('<MenuLink />', () => {
   });
 
   it('Snapshot component MenuLink ', () => {
-    renderTheme(
+    const { container } = renderTheme(
       <MenuLink link="http://localhost" newtab={true}>
         Children
       </MenuLink>,
     );
-    expect(screen.getByRole('link', { name: 'Children' })).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
